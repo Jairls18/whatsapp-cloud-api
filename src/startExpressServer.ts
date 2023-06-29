@@ -93,6 +93,7 @@ export const startExpressServer = (
       case 'video':
       case 'sticker':
       case 'location':
+      case 'button':
       case 'contacts':
         event = PubSubEvents[type as PubSubEvent];
         data = rest[type];
